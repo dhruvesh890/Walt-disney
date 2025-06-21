@@ -15,7 +15,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 if __name__ == '__main__':
-    BOT_TOKEN = os.getenv("7900927113:AAE7NgOnGpznkIvaJUCQSKZeH5J_ozE8uVM")
+    BOT_TOKEN = os.getenv("BOT_TOKEN")
     app = ApplicationBuilder().token(BOT_TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
